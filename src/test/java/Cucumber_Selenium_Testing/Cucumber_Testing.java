@@ -9,7 +9,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/java/Demo.feature",
-				format={"pretty","html:target/Reports"})
+				format={"pretty","html:target/Reports"}
+				,glue={"Cucumber_Selenium_Runner"})
 public class Cucumber_Testing {
 	public static void main(String args[])
 	{
