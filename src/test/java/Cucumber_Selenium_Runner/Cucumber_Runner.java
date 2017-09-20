@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import com.sun.jna.platform.unix.X11.Window;
-
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -21,8 +19,10 @@ public class Cucumber_Runner {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://Enterprise.Demo.Orangehrmlive.Com/");
+
+		}
 			  
-	}
+	
 
 	@When("^Enter Username and Password$")
 	public void enter_Username_and_Password() throws Throwable {
